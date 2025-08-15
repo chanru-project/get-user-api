@@ -1,0 +1,101 @@
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --text: #c9d1d9;
+  --muted: #8b949e;
+  --accent: #2f81f7;
+  --border: #30363d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 { margin: 0 0 16px; }
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input[type="text"], input[type="password"] {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+button {
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.status { min-height: 24px; margin: 4px 0 16px; color: var(--muted); }
+
+.hidden { display: none !important; }
+
+.profile {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.profile .meta { display: grid; gap: 6px; }
+.profile .name { font-size: 1.25rem; font-weight: 600; }
+.profile .login { color: var(--muted); }
+.profile .counts { color: var(--muted); font-size: 0.95rem; }
+.profile a { color: var(--accent); text-decoration: none; }
+
+.repos h2 { margin: 0 0 8px; }
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.repo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.repo-card a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.repo-meta { color: var(--muted); font-size: 0.9rem; display: flex; gap: 10px; flex-wrap: wrap; }
+
+.load-more-row { display: flex; justify-content: center; margin: 16px 0; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub User Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>GitHub User Finder</h1>
+
+    <div class="search-row">
+      <input id="username" type="text" placeholder="Enter GitHub username (e.g. octocat)" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Optional: paste a token to increase rate limit (comment out if not used) -->
+    <!-- <input id="token" type="password" placeholder="Optional: GitHub token for higher rate limit" /> -->
+
+    <div id="status" class="status"></div>
+
+    <section id="profile" class="profile hidden"></section>
+
+    <section class="repos">
+      <h2 id="reposTitle" class="hidden">Repositories</h2>
+      <div id="reposList" class="repo-grid"></div>
+      <div class="load-more-row hidden">
+        <button id="loadMoreBtn">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
