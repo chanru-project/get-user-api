@@ -55,10 +55,7 @@ const GITHUB_API_KEY = 'your_personal_access_token_here';
 ---
 
 📸 Preview
-
-
-(Replace with your screenshot)
-
+( https://chanru-project.github.io/get-user-api/)
 
 
 ---
