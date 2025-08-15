@@ -34,26 +34,6 @@ GitHub REST API – Source of user and repository data.
 
 ---
 
-📦 Installation & Usage
-
-1. Clone this repository
-
-git clone https://github.com/yourusername/github-user-finder.git
-
-
-2. Open the project folder
-
-cd github-user-finder
-
-
-3. Open index.html in your browser
-No server setup is required — it runs locally.
-
-
-
-
----
-
 🔑 GitHub API Key Setup (Optional for higher rate limits)
 
 By default, GitHub API allows 60 requests/hour for unauthenticated requests.
